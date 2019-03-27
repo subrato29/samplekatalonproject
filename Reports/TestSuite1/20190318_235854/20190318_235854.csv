@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,Chrome 72.0.3626.121,,2019-03-18 23:58:59,2019-03-18 23:59:23,23.293s,PASSED
+,,,,,,
+Test Cases/TestRecord,Chrome 72.0.3626.121,,2019-03-18 23:59:01,2019-03-18 23:59:12,11.564s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 72.0.3626.121,,2019-03-18 23:59:01,2019-03-18 23:59:01,0.025s,PASSED
+"openBrowser("""")",Chrome 72.0.3626.121,,2019-03-18 23:59:02,2019-03-18 23:59:06,3.971s,PASSED
+"navigateToUrl(""https://coloradopeak.secure.force.com/AC_Welcome?"")",Chrome 72.0.3626.121,,2019-03-18 23:59:06,2019-03-18 23:59:08,2.471s,PASSED
+"click(findTestObject(""WelcomePage/btnNext""))",Chrome 72.0.3626.121,,2019-03-18 23:59:08,2019-03-18 23:59:10,1.384s,PASSED
+"selectOptionByValue(findTestObject(""WelcomePage/selectCounty""), ""006"", true)",Chrome 72.0.3626.121,,2019-03-18 23:59:10,2019-03-18 23:59:10,0.651s,PASSED
+"click(findTestObject(""WelcomePage/btnNextCountyPage""))",Chrome 72.0.3626.121,,2019-03-18 23:59:10,2019-03-18 23:59:11,0.611s,PASSED
+"setText(findTestObject(""WelcomePage/txtFirstName""), ""David"")",Chrome 72.0.3626.121,,2019-03-18 23:59:11,2019-03-18 23:59:11,0.207s,PASSED
+"setText(findTestObject(""WelcomePage/txtAge""), ""34"")",Chrome 72.0.3626.121,,2019-03-18 23:59:11,2019-03-18 23:59:11,0.115s,PASSED
+closeBrowser(),Chrome 72.0.3626.121,,2019-03-18 23:59:11,2019-03-18 23:59:12,1.184s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 72.0.3626.121,,2019-03-18 23:59:12,2019-03-18 23:59:12,0.003s,PASSED
+,,,,,,
+Test Cases/TestScripts,Chrome 72.0.3626.121,,2019-03-18 23:59:12,2019-03-18 23:59:23,10.239s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 72.0.3626.121,,2019-03-18 23:59:12,2019-03-18 23:59:12,0.002s,PASSED
+com.app.keyword.Keywords.start(),Chrome 72.0.3626.121,,2019-03-18 23:59:13,2019-03-18 23:59:21,8.460s,PASSED
+com.app.keyword.Keywords.people(),Chrome 72.0.3626.121,,2019-03-18 23:59:21,2019-03-18 23:59:22,0.347s,PASSED
+closeBrowser(),Chrome 72.0.3626.121,,2019-03-18 23:59:22,2019-03-18 23:59:23,0.934s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 72.0.3626.121,,2019-03-18 23:59:23,2019-03-18 23:59:23,0.002s,PASSED

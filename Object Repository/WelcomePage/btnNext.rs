@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btnNext</name>
+   <tag></tag>
+   <elementGuidId>199aa7cd-5d04-4ab8-b3fd-b2c534e52b6c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@onclick=&quot;var a=function(){callGAEventReg('Next','Welcome');return checkMutipleClick(this);if(window != window.top){var f = document.getElementById('j_id0:PKPageTemplate:form1');f.action += (f.action.indexOf('?') == -1 ? '?' : '&amp;');};};var b=function(){if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id0:PKPageTemplate:form1'),'j_id0:PKPageTemplate:form1:navButtons:j_id188:j_id196,j_id0:PKPageTemplate:form1:navButtons:j_id188:j_id196,j_id0:PKPageTemplate:form1:navButtons:j_id188:j_id197,NextButtonClicked','');}return false};return (a()==false) ? false : b();&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;j_id0:PKPageTemplate:form1:navButtons:j_id188:j_id195&quot;)/a[@class=&quot;afbDarkBlueBtn&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <value>//a[contains(text(),'Next')]</value>
+   </webElementXpaths>
+</WebElementEntity>
