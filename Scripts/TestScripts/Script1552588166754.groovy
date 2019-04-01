@@ -18,4 +18,4 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'com.app.keyword.Keywords.start'()
 CustomKeywords.'com.app.keyword.Keywords.people'()
-WebUI.closeBrowser()
+//WebUI.closeBrowser()

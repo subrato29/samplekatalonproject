@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ColoradoPeakProMetrics" time="49" tests="1" failures="0" errors="0">
+   <testsuite name="ColoradoPeakProMetrics" tests="1" failures="0" errors="0" time="49" timestamp="2019-03-29 13:05:36" hostname="subsarkar - USLMASUBSARKAR2.us.deloitte.com" id="Test Suites/ColoradoPeakProMetrics">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\subsarkar\\software\\workspacekatalon\\skydive\\Reports\\ColoradoPeakProMetrics\\20190329_130530"/>
+         <property name="logFiles" value="C:\\Users\\subsarkar\\software\\workspacekatalon\\skydive\\Reports\\ColoradoPeakProMetrics\\20190329_130530\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="subsarkar - USLMASUBSARKAR2.us.deloitte.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.6.4"/>
+         <property name="browser" value="Chrome 73.0.3683.86"/>
+         <property name="hostAddress" value="192.168.1.102"/>
+         <property name="sessionId" value="60b4545900f6bd2d3e7a51445def0e57"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/ColoradoPeak" classname="Test Cases/ColoradoPeak" status="PASSED">
+         <system-out><![CDATA[2019-03-29 13:05:38 - [TEST_CASE][PASSED] - Test Cases/ColoradoPeak: Test Cases/ColoradoPeak
+
+2019-03-29 13:05:38 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: null
+
+2019-03-29 13:05:38 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-03-29 13:05:38 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2019-03-29 13:05:39 - [TEST_STEP][PASSED] - com.app.keyword.Keywords.peakReport(): 2016
+
+2019-03-29 13:05:40 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-03-29 13:05:41 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-03-29 13:05:49 - [MESSAGE][PASSED] - Browser is opened with url: 'https://coloradopeak.secure.force.com/RPTSS'
+
+2019-03-29 13:05:49 - [MESSAGE][PASSED] - Current window maximized
+
+2019-03-29 13:05:50 - [MESSAGE][PASSED] - Report Name: ***************************************Am I Eligible-Self Assessments Totals**********************************************************
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:1 Self-Assessments started in the month1--------------Count: 6584
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:2 Self-Assessments completed in the month2--------------Count: 4809
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:3 Number of households found to be potentially eligible for one or more programs in the month--------------Count: 3692
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:4 Self-Assessments started since initial launch (10/18/2009) through report month3--------------Count: 404878
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:5 Self-Assessments completed since initial launch (10/18/2009) through report month4--------------Count: 605409
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:6 Number of households found to be potentially eligible for WIC--------------Count: 919
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:7 Number of households found to be potentially eligible for HIPPY--------------Count: 228
+
+2019-03-29 13:05:51 - [MESSAGE][PASSED] - Statistic:8 Number of households found to be potentially eligible for PAT--------------Count: 1273
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:9 Number of households found to be potentially eligible for NFP--------------Count: 178
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:10 Number of households found to be potentially eligible for Healthy Steps--------------Count: 838
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:11 Number of households found to be potentially eligible for Preschool Special Education--------------Count: 10
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:12 Number of households found to be potentially eligible for School Nutrition Programs--------------Count: 598
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:13 Number of households found to be potentially eligible for Head Start--------------Count: 268
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:14 Number of households found to be in-eligible for Head Start due to non-participating county--------------Count: 119
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:15 Number of households found to be potentially eligible for EI Colorado--------------Count: 64
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:16 Number of households found to be potentially eligible for LEAP--------------Count: 598
+
+2019-03-29 13:05:52 - [MESSAGE][PASSED] - Statistic:17 Number of households found to be potentially eligible for CCCAP--------------Count: 915
+
+2019-03-29 13:05:53 - [MESSAGE][PASSED] - Statistic:18 Number of households found to be potentially eligible for SafeCare--------------Count: 204
+
+2019-03-29 13:05:54 - [MESSAGE][PASSED] - Report Name: ***************************************Spanish Webpage**********************************************************
+
+2019-03-29 13:05:54 - [MESSAGE][PASSED] - Statistic:1 Number of household selecting Spanish1--------------Count: 48
+
+2019-03-29 13:05:55 - [MESSAGE][PASSED] - Report Name: ***************************************Unique Accounts Created**********************************************************
+
+2019-03-29 13:05:55 - [MESSAGE][PASSED] - Statistic:1 All new accounts created in the month--------------Count: 12822
+
+2019-03-29 13:05:56 - [MESSAGE][PASSED] - Report Name: ***************************************Total Number Of Applications And Change Reports**********************************************************
+
+2019-03-29 13:05:56 - [MESSAGE][PASSED] - Statistic:1 Applications started in the month 2--------------Count: 16768
+
+2019-03-29 13:05:56 - [MESSAGE][PASSED] - Statistic:2 Applications to date 3--------------Count: 1863462
+
+2019-03-29 13:05:56 - [MESSAGE][PASSED] - Statistic:3 Change reports started in the month 4--------------Count: 35693
+
+2019-03-29 13:05:56 - [MESSAGE][PASSED] - Statistic:4 Change reports to date 5--------------Count: 1910847
+
+2019-03-29 13:05:56 - [MESSAGE][PASSED] - Statistic:5 ELE applications started in a month 6--------------Count: 16
+
+2019-03-29 13:05:56 - [MESSAGE][PASSED] - Statistic:6 ELE applications to date 7--------------Count: 787
+
+2019-03-29 13:05:57 - [MESSAGE][PASSED] - Report Name: ***************************************Monthly Total Of Users Accessing PEAK**********************************************************
+
+2019-03-29 13:05:57 - [MESSAGE][PASSED] - Statistic:1 Total number of times users logged on to a PEAK account--------------Count: 1
+
+2019-03-29 13:05:57 - [MESSAGE][PASSED] - Statistic:2 Number of distinct users who logged on to a PEAK account in the month--------------Count: 1
+
+2019-03-29 13:05:58 - [MESSAGE][PASSED] - Report Name: ***************************************Totals Per County**********************************************************
+
+2019-03-29 13:05:59 - [MESSAGE][PASSED] - Row:1*******Adams-------405--------1941--------148377--------4258--------205735
+
+2019-03-29 13:05:59 - [MESSAGE][PASSED] - Row:2*******Alamosa-------18--------56--------3915--------98--------4133
+
+2019-03-29 13:05:59 - [MESSAGE][PASSED] - Row:3*******Arapahoe-------556--------2239--------202599--------4422--------242360
+
+2019-03-29 13:05:59 - [MESSAGE][PASSED] - Row:4*******Archuleta-------9--------22--------3428--------55--------4386
+
+2019-03-29 13:06:00 - [MESSAGE][PASSED] - Row:5*******Baca-------1--------6--------1213--------9--------636
+
+2019-03-29 13:06:00 - [MESSAGE][PASSED] - Row:6*******Bent-------1--------12--------640--------17--------929
+
+2019-03-29 13:06:00 - [MESSAGE][PASSED] - Row:7*******Boulder-------236--------644--------76943--------1632--------93569
+
+2019-03-29 13:06:01 - [MESSAGE][PASSED] - Row:8*******Broomfield-------56--------106--------12114--------255--------13244
+
+2019-03-29 13:06:01 - [MESSAGE][PASSED] - Row:9*******Chaffee-------18--------57--------4694--------95--------4701
+
+2019-03-29 13:06:01 - [MESSAGE][PASSED] - Row:10*******Cheyenne-------2--------2--------284--------3--------254
+
+2019-03-29 13:06:01 - [MESSAGE][PASSED] - Row:11*******Clear Creek-------11--------20--------2056--------12--------1860
+
+2019-03-29 13:06:02 - [MESSAGE][PASSED] - Row:12*******Conejos-------8--------18--------1384--------42--------1739
+
+2019-03-29 13:06:02 - [MESSAGE][PASSED] - Row:13*******Costilla-------1--------8--------664--------27--------779
+
+2019-03-29 13:06:02 - [MESSAGE][PASSED] - Row:14*******Crowley-------3--------4--------1050--------6--------429
+
+2019-03-29 13:06:02 - [MESSAGE][PASSED] - Row:15*******Custer-------3--------8--------923--------10--------923
+
+2019-03-29 13:06:03 - [MESSAGE][PASSED] - Row:16*******Delta-------28--------92--------6789--------245--------10187
+
+2019-03-29 13:06:03 - [MESSAGE][PASSED] - Row:17*******Denver-------739--------2460--------206255--------4795--------238612
+
+2019-03-29 13:06:03 - [MESSAGE][PASSED] - Row:18*******Dolores-------1--------6--------601--------6--------688
+
+2019-03-29 13:06:03 - [MESSAGE][PASSED] - Row:19*******Douglas-------162--------421--------43678--------968--------58365
+
+2019-03-29 13:06:04 - [MESSAGE][PASSED] - Row:20*******Eagle-------24--------74--------11923--------152--------11809
+
+2019-03-29 13:06:04 - [MESSAGE][PASSED] - Row:21*******El Paso-------846--------3158--------197606--------6783--------266872
+
+2019-03-29 13:06:04 - [MESSAGE][PASSED] - Row:22*******Elbert-------14--------34--------3656--------87--------4132
+
+2019-03-29 13:06:04 - [MESSAGE][PASSED] - Row:23*******Fremont-------49--------112--------7775--------256--------9038
+
+2019-03-29 13:06:05 - [MESSAGE][PASSED] - Row:24*******Garfield-------42--------155--------16496--------287--------16897
+
+2019-03-29 13:06:05 - [MESSAGE][PASSED] - Row:25*******Gilpin-------8--------14--------1349--------29--------1385
+
+2019-03-29 13:06:05 - [MESSAGE][PASSED] - Row:26*******Grand-------20--------35--------4117--------57--------4058
+
+2019-03-29 13:06:05 - [MESSAGE][PASSED] - Row:27*******Gunnison-------10--------34--------5929--------58--------5359
+
+2019-03-29 13:06:06 - [MESSAGE][PASSED] - Row:28*******Hinsdale-------1--------0--------220--------0--------218
+
+2019-03-29 13:06:06 - [MESSAGE][PASSED] - Row:29*******Huerfano-------1--------20--------1440--------27--------1374
+
+2019-03-29 13:06:06 - [MESSAGE][PASSED] - Row:30*******Jackson-------1--------2--------316--------7--------259
+
+2019-03-29 13:06:07 - [MESSAGE][PASSED] - Row:31*******Jefferson-------397--------1340--------131382--------3226--------152450
+
+2019-03-29 13:06:07 - [MESSAGE][PASSED] - Row:32*******Kiowa-------0--------2--------875--------8--------229
+
+2019-03-29 13:06:07 - [MESSAGE][PASSED] - Row:33*******Kit Carson-------4--------16--------1342--------36--------1693
+
+2019-03-29 13:06:07 - [MESSAGE][PASSED] - Row:34*******La Plata-------69--------153--------15752--------326--------18190
+
+2019-03-29 13:06:08 - [MESSAGE][PASSED] - Row:35*******Lake-------3--------8--------1919--------19--------2332
+
+2019-03-29 13:06:08 - [MESSAGE][PASSED] - Row:36*******Larimer-------291--------935--------82940--------1942--------106163
+
+2019-03-29 13:06:08 - [MESSAGE][PASSED] - Row:37*******Las Animas-------14--------42--------3048--------84--------5147
+
+2019-03-29 13:06:08 - [MESSAGE][PASSED] - Row:38*******Lincoln-------4--------15--------1030--------31--------1052
+
+2019-03-29 13:06:09 - [MESSAGE][PASSED] - Row:39*******Logan-------10--------51--------4052--------79--------3273
+
+2019-03-29 13:06:09 - [MESSAGE][PASSED] - Row:40*******Mesa-------148--------489--------36288--------882--------44280
+
+2019-03-29 13:06:09 - [MESSAGE][PASSED] - Row:41*******Mineral-------0--------1--------299--------3--------270
+
+2019-03-29 13:06:09 - [MESSAGE][PASSED] - Row:42*******Moffatt-------9--------50--------3105--------101--------4338
+
+2019-03-29 13:06:10 - [MESSAGE][PASSED] - Row:43*******Montezuma-------19--------70--------6791--------167--------7667
+
+2019-03-29 13:06:10 - [MESSAGE][PASSED] - Row:44*******Montrose-------25--------68--------7828--------114--------9391
+
+2019-03-29 13:06:10 - [MESSAGE][PASSED] - Row:45*******Morgan-------11--------75--------5046--------115--------5107
+
+2019-03-29 13:06:11 - [MESSAGE][PASSED] - Row:46*******Otero-------8--------33--------3355--------106--------3661
+
+2019-03-29 13:06:11 - [MESSAGE][PASSED] - Row:47*******Ouray-------1--------0--------1324--------11--------1385
+
+2019-03-29 13:06:11 - [MESSAGE][PASSED] - Row:48*******Park-------10--------46--------3621--------67--------3846
+
+2019-03-29 13:06:11 - [MESSAGE][PASSED] - Row:49*******Phillips-------1--------6--------513--------9--------451
+
+2019-03-29 13:06:12 - [MESSAGE][PASSED] - Row:50*******Pitkin-------5--------13--------5137--------35--------4760
+
+2019-03-29 13:06:12 - [MESSAGE][PASSED] - Row:51*******Prowers-------10--------32--------1964--------49--------2518
+
+2019-03-29 13:06:12 - [MESSAGE][PASSED] - Row:52*******Pueblo-------156--------601--------37014--------1371--------52219
+
+2019-03-29 13:06:13 - [MESSAGE][PASSED] - Row:53*******Rio Blanco-------6--------7--------735--------24--------731
+
+2019-03-29 13:06:13 - [MESSAGE][PASSED] - Row:54*******Rio Grande-------12--------32--------2534--------68--------2457
+
+2019-03-29 13:06:13 - [MESSAGE][PASSED] - Row:55*******Routt-------17--------31--------7793--------84--------8337
+
+2019-03-29 13:06:14 - [MESSAGE][PASSED] - Row:56*******Saguache-------7--------21--------1934--------56--------2493
+
+2019-03-29 13:06:14 - [MESSAGE][PASSED] - Row:57*******San Juan-------2--------1--------295--------0--------332
+
+2019-03-29 13:06:14 - [MESSAGE][PASSED] - Row:58*******San Miguel-------3--------12--------2871--------42--------2674
+
+2019-03-29 13:06:15 - [MESSAGE][PASSED] - Row:59*******Sedgwick-------1--------2--------359--------21--------436
+
+2019-03-29 13:06:15 - [MESSAGE][PASSED] - Row:60*******Summit-------22--------42--------9621--------102--------9287
+
+2019-03-29 13:06:15 - [MESSAGE][PASSED] - Row:61*******Teller-------26--------56--------4274--------146--------5374
+
+2019-03-29 13:06:15 - [MESSAGE][PASSED] - Row:62*******Washington-------2--------7--------833--------12--------857
+
+2019-03-29 13:06:16 - [MESSAGE][PASSED] - Row:63*******Weld-------232--------736--------61024--------1638--------74018
+
+2019-03-29 13:06:16 - [MESSAGE][PASSED] - Row:64*******Yuma-------10--------15--------1675--------21--------1548
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - Report Name: ***************************************Change Report Summary**********************************************************
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - *******************************************************Monthly Reports**********************************************************
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - February2019
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - January2019
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - December2018
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - November2018
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - October2018
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - *******************************************************Yearly Reports**********************************************************
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - 2018
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - 2017
+
+2019-03-29 13:06:17 - [MESSAGE][PASSED] - 2016
+
+2019-03-29 13:06:18 - [MESSAGE][PASSED] - 2015
+
+2019-03-29 13:06:18 - [MESSAGE][PASSED] - 2014
+
+2019-03-29 13:06:18 - [MESSAGE][PASSED] - Report Name: ***************************************AFB Report Summary**********************************************************
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - *******************************************************Monthly Reports**********************************************************
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - February2019
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - January2019
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - December2018
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - November2018
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - October2018
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - *******************************************************AFB Reports by Year**********************************************************
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - 2018
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - 2017
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - 2016
+
+2019-03-29 13:06:19 - [MESSAGE][PASSED] - 2015
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - Report Name: ***************************************AFB Incomplete Pages**********************************************************
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - *******************************************************Monthly Reports**********************************************************
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - February2019
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - January2019
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - December2018
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - November2018
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - October2018
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - *******************************************************Yearly Page Report**********************************************************
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - 2018
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - 2017
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - 2016
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - 2015
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - 2014
+
+2019-03-29 13:06:20 - [MESSAGE][PASSED] - 2013
+
+2019-03-29 13:06:21 - [MESSAGE][PASSED] - Report Name: ***************************************Medical Card Requests**********************************************************
+
+2019-03-29 13:06:21 - [MESSAGE][PASSED] - *******************************************************Monthly Reports**********************************************************
+
+2019-03-29 13:06:21 - [MESSAGE][PASSED] - February
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - January
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - December
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - November
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - October
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - September
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - August
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - July
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - June
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - May
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - April
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - March
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - *******************************************************Yearly Reports**********************************************************
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - 2018
+
+2019-03-29 13:06:22 - [MESSAGE][PASSED] - 2017
+
+2019-03-29 13:06:23 - [MESSAGE][PASSED] - Report Name: ***************************************Document Uploads Via PEAK**********************************************************
+
+2019-03-29 13:06:23 - [MESSAGE][PASSED] - *******************************************************Monthly Reports**********************************************************
+
+2019-03-29 13:06:23 - [MESSAGE][PASSED] - February-2019
+
+2019-03-29 13:06:23 - [MESSAGE][PASSED] - January-2019
+
+2019-03-29 13:06:23 - [MESSAGE][PASSED] - December-2018
+
+2019-03-29 13:06:23 - [MESSAGE][PASSED] - November-2018
+
+2019-03-29 13:06:23 - [MESSAGE][PASSED] - October-2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - Report Name: ***************************************Voter Registration**********************************************************
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - *******************************************************Monthly Reports**********************************************************
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - February 2019
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - January 2019
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - December 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - November 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - October 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - September 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - August 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - July 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - June 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - May 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - April 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - March 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - *******************************************************Yearly Reports**********************************************************
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - 2018
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - 2017
+
+2019-03-29 13:06:24 - [MESSAGE][PASSED] - 2016
+
+2019-03-29 13:06:26 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: null
+
+2019-03-29 13:06:26 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2019-03-29 13:06:26 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-03-29 13:05:36 - [TEST_SUITE][PASSED] - ColoradoPeakProMetrics: Test Cases/ColoradoPeak]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

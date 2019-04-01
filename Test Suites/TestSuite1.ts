@@ -11,15 +11,9 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>42b340f4-37a3-4572-89cc-b362abb0163e</testSuiteGuid>
    <testCaseLink>
-      <guid>f1bd9616-e9a4-4a79-801d-08e924a0ad8d</guid>
+      <guid>f887364b-1736-43d4-8dc9-78ffd589ad35</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TestRecord</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>090b4155-c228-470e-8a55-4a52e9948a95</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/TestScripts</testCaseId>
+      <testCaseId>Test Cases/ColoradoPeak</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

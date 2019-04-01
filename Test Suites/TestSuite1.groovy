@@ -49,7 +49,9 @@ def tearDown() {
  */
 @SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def setupTestCase() {
-	// Put your code here.
+//		String url="https://coloradopeak.secure.force.com/AC_Welcome?Language=EN";
+//		WebUI.openBrowser(url);
+//		WebUI.maximizeWindow();
 }
 
 /**
@@ -57,7 +59,7 @@ def setupTestCase() {
  */
 @TearDownTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def tearDownTestCase() {
-	// Put your code here.
+		//WebUI.closeBrowser()
 }
 
 /**

@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,Chrome 73.0.3683.86,,2019-03-28 15:47:14,2019-03-28 15:47:43,29.106s,PASSED
+,,,,,,
+Test Cases/ColoradoPeak,Chrome 73.0.3683.86,,2019-03-28 15:47:15,2019-03-28 15:47:43,28.083s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 73.0.3683.86,,2019-03-28 15:47:15,2019-03-28 15:47:15,0.037s,PASSED
+com.app.keyword.Keywords.peakReport(),Chrome 73.0.3683.86,,2019-03-28 15:47:15,2019-03-28 15:47:43,27.437s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 73.0.3683.86,,2019-03-28 15:47:43,2019-03-28 15:47:43,0.005s,PASSED
