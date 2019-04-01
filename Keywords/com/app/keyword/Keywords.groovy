@@ -1,4 +1,10 @@
 package com.app.keyword
+//****************************************Selenium webdriver***********************************************
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
+//****************************************Selenium webdriver***********************************************
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -103,7 +109,7 @@ class Keywords {
 	 * ##############################
 	 */
 	@Keyword
-	def boolean people(){
+	def boolean people(TestObject to){
 		boolean people=false;
 		String firstName=findTestData('testdatasheet').getValue("FirstName", 1);
 		String age=findTestData('testdatasheet').getValue("Age", 1);
@@ -118,4 +124,112 @@ class Keywords {
 		}
 		return people;
 	}
+
+
+	//****************** Keywords for Colorado PEAK Report******************************************
+
+	/**
+	 * ####################################################################################
+	 * ##############################
+	 * Keyword name: peakReport
+	 * Description: Fetching up Colorado PEAK report
+	 * Developed on: 03/27/2019
+	 * Author: Subrato Sarkar
+	 * ####################################################################################
+	 * ##############################
+	 */
+	@Keyword
+	def boolean peakReport(){
+		boolean peakReport=false;
+		try{
+			String url="https://coloradopeak.secure.force.com/RPTSS";
+			/*System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe")
+			 WebDriver driver = new ChromeDriver()
+			 driver.get(url);
+			 driver.manage().window().maximize();*/
+			WebUI.openBrowser(url);
+			WebUI.maximizeWindow();
+			WebDriver driver = DriverFactory.getWebDriver();
+			int countOfReportLinks=driver.findElements(By.xpath("//ol/li/a")).size()-1;
+			println("No of links: "+countOfReportLinks)
+			for(int i=1;i<=countOfReportLinks;i++){
+				driver.findElement(By.xpath("//ol/li["+(i+1)+"]/a")).click();
+				String report=driver.findElement(By.xpath("//ol/li["+(i+1)+"]/a")).getText().trim()
+				KeywordUtil.markPassed("Report Name: ***************************************"+report+"**********************************************************")
+				if(i<6){
+					//println("Count of row: "+driver.findElements(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr")).size())
+					//	String report=driver.findElement(By.xpath("//ol/li["+(i+1)+"]/a")).getText().trim()
+					//println("Report:ooooooooooooooo"+report)
+					//	KeywordUtil.markPassed("Report Name: ***************************************"+report+"**********************************************************")
+					int countOfTblRow=driver.findElements(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr")).size()
+					for(int j=1;j<=countOfTblRow;j++){
+						String statistic=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[1]")).getText().trim();
+						String count=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[2]")).getText().trim();
+						//print("Statistic:"+j+" "+statistic)
+						//print("--------------Count: "+count)
+						//println();
+						KeywordUtil.markPassed("Statistic:"+j+" "+statistic+"--------------Count: "+count);
+					}
+				}
+				if(i==6){
+					int countOfTblRow=driver.findElements(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr")).size()
+					//KeywordUtil.
+					for(int j=1;j<=countOfTblRow;j++){
+						String countyName=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[1]")).getText().trim();
+						String selfAssessments=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[2]")).getText().trim();
+						String applicationsInMonth=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[3]")).getText().trim();
+						String applicationsToDate=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[4]")).getText().trim();
+						String changesInMonth=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[5]")).getText().trim();
+						String changesToDate=driver.findElement(By.xpath("//table[@class='AFBSummaryTable']/tbody/tr["+j+"]/td[6]")).getText().trim();
+						KeywordUtil.markPassed("Row:"+j+"*******"+countyName+"-------"+selfAssessments+"--------"+applicationsInMonth+"--------"+applicationsToDate+"--------"+changesInMonth+"--------"+changesToDate);
+					}
+
+				}
+				if(i>6){
+					int countOfTblRowMonthlyReports=driver.findElements(By.xpath("//span[text()='Monthly Reports']/../../../../../..//table[@class='AFBSummaryTable']/tbody/tr")).size()
+					KeywordUtil.markPassed("*******************************************************"+"Monthly Reports"+"**********************************************************")
+					for(int j=1;j<=countOfTblRowMonthlyReports;j++){
+						String monthlyReport=driver.findElement(By.xpath("//span[text()='Monthly Reports']/../../../../../..//table[@class='AFBSummaryTable']/tbody/tr["+j+"]//a")).getText().trim();
+						KeywordUtil.markPassed(monthlyReport);
+					}
+					if(i==7||i==10||i==12){
+						KeywordUtil.markPassed("*******************************************************"+"Yearly Reports"+"**********************************************************");
+						int countOfYearlyReports=driver.findElements(By.xpath("//div[text()='Yearly Reports']/../../../..//tr/td/a")).size()
+						for(int j=1;j<=countOfYearlyReports;j++){
+							String yearlyReport=driver.findElement(By.xpath("//div[text()='Yearly Reports']/../../../..//tr["+j+"]/td/a")).getText().trim();
+							KeywordUtil.markPassed(yearlyReport);
+						}
+					}
+					if(i==8){
+						KeywordUtil.markPassed("*******************************************************"+"AFB Reports by Year"+"**********************************************************");
+						int countOfYearlyReports=driver.findElements(By.xpath("//div[text()='AFB Reports by Year']/../../../..//tr/td/a")).size()
+						for(int j=1;j<=countOfYearlyReports;j++){
+							String yearlyReport=driver.findElement(By.xpath("//div[text()='AFB Reports by Year']/../../../..//tr["+j+"]/td/a")).getText().trim();
+							KeywordUtil.markPassed(yearlyReport);
+						}
+					}
+					if(i==9){
+						KeywordUtil.markPassed("*******************************************************"+"Yearly Page Report"+"**********************************************************");
+						int countOfYearlyReports=driver.findElements(By.xpath("//div[text()='Yearly Page Report']/../../../..//tr/td/a")).size()
+						for(int j=1;j<=countOfYearlyReports;j++){
+							String yearlyReport=driver.findElement(By.xpath("//div[text()='Yearly Page Report']/../../../..//tr["+j+"]/td/a")).getText().trim();
+							KeywordUtil.markPassed(yearlyReport);
+						}
+					}
+
+
+				}
+
+			}
+			driver.quit();
+			peakReport=true
+		}catch(Throwable t){
+			t.printStackTrace();
+			KeywordUtil.markFailed("peakReport keyword is failed")
+			peakReport=false;
+		}
+		return peakReport;
+	}
+
+
 }
