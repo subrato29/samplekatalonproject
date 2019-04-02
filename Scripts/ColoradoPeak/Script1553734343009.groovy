@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'com.app.keyword.Keywords.peakReport'()
+if(CustomKeywords.'com.driver.script.DriverScript.isTestCaseRunnable'('TC001')){
+		CustomKeywords.'com.app.keyword.Keywords.peakReport'()
+}
 
-
-	

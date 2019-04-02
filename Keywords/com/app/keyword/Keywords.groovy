@@ -46,9 +46,12 @@ import com.kms.katalon.core.mobile.helper.MobileElementCommonHelper
 import com.kms.katalon.core.util.KeywordUtil
 
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
+import com.util.keyword.Xls_Reader
+import com.driver.script.DriverScript
 
+class Keywords extends DriverScript{
 
-class Keywords {
+	def Xls_Reader xls = new Xls_Reader(System.getProperty("user.dir")+"\\Data Files\\testdatasheet.xlsx");
 	/**
 	 * Click element
 	 * @param to Katalon test object
@@ -142,14 +145,10 @@ class Keywords {
 	def boolean peakReport(){
 		boolean peakReport=false;
 		try{
-			String url="https://coloradopeak.secure.force.com/RPTSS";
-			/*System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe")
-			 WebDriver driver = new ChromeDriver()
-			 driver.get(url);
-			 driver.manage().window().maximize();*/
-			WebUI.openBrowser(url);
-			WebUI.maximizeWindow();
-			WebDriver driver = DriverFactory.getWebDriver();
+			/*String url="https://coloradopeak.secure.force.com/RPTSS";
+			 WebUI.openBrowser(url);
+			 WebUI.maximizeWindow();
+			 WebDriver driver = DriverFactory.getWebDriver();*/
 			int countOfReportLinks=driver.findElements(By.xpath("//ol/li/a")).size()-1;
 			println("No of links: "+countOfReportLinks)
 			for(int i=1;i<=countOfReportLinks;i++){
@@ -221,7 +220,7 @@ class Keywords {
 				}
 
 			}
-			driver.quit();
+			//driver.quit();
 			peakReport=true
 		}catch(Throwable t){
 			t.printStackTrace();
